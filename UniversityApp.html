@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
+		<link rel="stylesheet" href="styles.css">
+		<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
+		<script src="submit.js"></script>
+		<meta name="Viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+		<meta http-equiv="Pragma" content="no-cache" />
+		<meta http-equiv="Expires" content="0" />
+		<meta content="text/html; charset=UTF-8; X-Content-Type-Options=nosniff" http-equiv="Content-Type" />
+	</head>
+    <body>
+        <div data-role="header">*University Application*</div>
+		<div data-role="content">
+			<label for="name">Name:</label>
+			<input type='text' name='name' id='name'>
+			<label for="address">Address:</label>
+			<input type='text' name='address' id='address'>
+			<label for="phone">Phone:</label>
+			<input type="text" name='phone' id='phone'>
+			<br>
+			<button onclick="saveData();">Save</button>
+			<button onclick="deleteInformation();">Delete</button>
+			<br><br>
+			<label for="search">Search:</label>
+			<input type="text" name='search' id='search'>
+			<button onclick="searchInfo();">Search</button>
+			<button onclick="displayRecords();">Display records</button>
+			<table id="displayTable">
+			</table>
+			<br><br>
+		</div>
+    </body>
+</html>
